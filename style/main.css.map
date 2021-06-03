@@ -1,8 +1,17 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf;;AMRD,gBAAgB;AAMhB,6DAA6D;AAE7D,oBAAoB;AAMpB,kBAAkB;AAOlB,6DAA6D;AAE7D,mBAAmB;AAvBnB,gBAAgB;AAMhB,6DAA6D;AAE7D,oBAAoB;AAMpB,kBAAkB;AAOlB,6DAA6D;AAE7D,mBAAmB",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "base/_fonts.scss",
+        "base/_resets.scss",
+        "components/_bouttons.scss",
+        "layouts/_footer.scss",
+        "layouts/_header.scss",
+        "pages/_product.scss",
+        "utils/_mixins.scss",
+        "utils/_variables.scss",
+        "utils/_variables.scss"
     ],
     "names": [],
     "file": "main.css"
