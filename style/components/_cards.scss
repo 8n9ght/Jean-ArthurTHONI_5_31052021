@@ -1,0 +1,12 @@
+.card{
+    background: $card-bg;
+    width: 35%;
+    height: 18rem;
+    box-shadow: $card-bg 10px 10px 20px;
+    margin: 0.8rem;
+    transition: all ease-in-out 200ms;
+    &:hover{
+        box-shadow: $card-bg 10px 10px 13px;
+        transform: scale(1.02);
+    }
+}

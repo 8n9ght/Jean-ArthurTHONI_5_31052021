@@ -1,0 +1,11 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../components/bouttons";
+
+.container{
+    @include flex-container;
+    &__title{
+        @include clean-title;
+        text-align: center;
+    }
+}

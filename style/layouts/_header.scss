@@ -1,0 +1,24 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.navigation{
+    background: $nav-bg;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__links{
+        display: flex;
+        flex-direction: row;
+        &--mobile{
+            @include desktoping;
+        }
+        &__item{
+            @include nav-links;
+            &:hover{
+                @include link-hovering;
+            }
+        }
+    }
+}
+

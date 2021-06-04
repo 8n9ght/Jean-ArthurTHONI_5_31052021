@@ -1,0 +1,9 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.card__add button{
+    background: $card-btn-bg;
+    border: none;
+    color: $card-btn-text;
+    padding: .5rem 1rem;
+}
