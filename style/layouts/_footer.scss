@@ -18,6 +18,10 @@
             list-style: none;
             &__item{
                 @include link-foot;
+                transition: color ease-in-out 200ms;
+                &:hover{
+                    color: $nav-text;
+                }
             }
         }
     }
@@ -29,6 +33,10 @@
             list-style: none;
             &__item{
                 @include link-foot;
+                transition: color ease-in-out 200ms;
+                &:hover{
+                    color: $nav-text;
+                }
             }
         }
     }

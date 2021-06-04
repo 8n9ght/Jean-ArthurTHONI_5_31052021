@@ -2,6 +2,11 @@
 
 /* Nav */
 
+@mixin clean-title {
+    color: $nav-text;
+    margin: 0 0 0 2rem;
+}
+
 @mixin nav-links {
     display: block;
     color: $nav-text;
@@ -23,7 +28,7 @@
 
 /* Container */
 
-@mixin clean-title {
+@mixin clean-title2 {
     flex: 0 0 100%;
     padding: 0.5rem 0 2rem;
 }

@@ -7,6 +7,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &__logo{
+        &__link{
+            text-decoration: none;
+        }
+        &__title{
+            @include clean-title;
+            transition: color ease-in-out 200ms;
+            &:hover{
+                color: $nav-hover;
+            }
+        }
+    }
     &__links{
         display: flex;
         flex-direction: row;

@@ -5,7 +5,7 @@
 .container{
     @include flex-container;
     &__title{
-        @include clean-title;
+        @include clean-title2;
         text-align: center;
     }
 }
