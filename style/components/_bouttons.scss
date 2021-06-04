@@ -1,0 +1,17 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.card__add button{
+    background: $card-btn-bg;
+    border: none;
+    color: $card-btn-text;
+    padding: .5rem 1rem;
+    box-shadow: $card-btn-bg 0 0 5px;
+    transition: all ease-in-out 200ms;
+    &:hover{
+        background: $card-text;
+        transform: scale(1.05);
+        color: $card-btn-text;
+        box-shadow: $card-btn-bg 0 0 10px;
+    }
+}

@@ -1,0 +1,60 @@
+@import "./variables";
+
+/* Nav */
+
+@mixin clean-title {
+    color: $nav-text;
+    margin: 0 0 0 2rem;
+}
+
+@mixin nav-links {
+    display: block;
+    color: $nav-text;
+    text-decoration: none;
+    padding: 1.9rem;
+    transition: background ease-in-out 200ms;
+}
+
+@mixin link-hovering {
+    background: $nav-hover;
+    color: $nav-accent;
+}
+
+@mixin desktoping {
+    display: none;
+}
+
+/*----------------------------------------------*/
+
+/* Container */
+
+@mixin clean-title2 {
+    flex: 0 0 100%;
+    padding: 0.5rem 0 2rem;
+}
+
+@mixin flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $container-bg;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+/* Footer */
+
+@mixin titling-foot {
+    font-size: 1.6rem;
+    color: $footer-title;
+    margin: .5rem 0;
+}
+
+@mixin link-foot {
+    font-size: 1.1rem;
+    display: block;
+    color: $footer-link;
+    padding: .5rem 0;
+    text-decoration: none;
+}

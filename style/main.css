@@ -1,1 +1,313 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav */
+/*----------------------------------------------*/
+/* Container */
+/* Footer */
+.card__add button {
+  background: #E6F7FF;
+  border: none;
+  color: #0B202E;
+  padding: .5rem 1rem;
+  -webkit-box-shadow: #E6F7FF 0 0 5px;
+          box-shadow: #E6F7FF 0 0 5px;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+.card__add button:hover {
+  background: #DBB21F;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #0B202E;
+  -webkit-box-shadow: #E6F7FF 0 0 10px;
+          box-shadow: #E6F7FF 0 0 10px;
+}
+
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav */
+/*----------------------------------------------*/
+/* Container */
+/* Footer */
+.end {
+  background: #0B202E;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem 0;
+  height: 13rem;
+}
+
+.end__conditions__title {
+  font-size: 1.6rem;
+  color: #EDF9FF;
+  margin: .5rem 0;
+}
+
+.end__conditions__links {
+  list-style: none;
+}
+
+.end__conditions__links__item {
+  font-size: 1.1rem;
+  display: block;
+  color: #DBB21F;
+  padding: .5rem 0;
+  text-decoration: none;
+  -webkit-transition: color ease-in-out 200ms;
+  transition: color ease-in-out 200ms;
+}
+
+.end__conditions__links__item:hover {
+  color: #E6F7FF;
+}
+
+.end__others__title {
+  font-size: 1.6rem;
+  color: #EDF9FF;
+  margin: .5rem 0;
+}
+
+.end__others__links {
+  list-style: none;
+}
+
+.end__others__links__item {
+  font-size: 1.1rem;
+  display: block;
+  color: #DBB21F;
+  padding: .5rem 0;
+  text-decoration: none;
+  -webkit-transition: color ease-in-out 200ms;
+  transition: color ease-in-out 200ms;
+}
+
+.end__others__links__item:hover {
+  color: #E6F7FF;
+}
+
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav */
+/*----------------------------------------------*/
+/* Container */
+/* Footer */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav */
+/*----------------------------------------------*/
+/* Container */
+/* Footer */
+.card__add button {
+  background: #E6F7FF;
+  border: none;
+  color: #0B202E;
+  padding: .5rem 1rem;
+  -webkit-box-shadow: #E6F7FF 0 0 5px;
+          box-shadow: #E6F7FF 0 0 5px;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+.card__add button:hover {
+  background: #DBB21F;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #0B202E;
+  -webkit-box-shadow: #E6F7FF 0 0 10px;
+          box-shadow: #E6F7FF 0 0 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E6F7FF;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.container__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding: 0.5rem 0 2rem;
+  text-align: center;
+}
+
+.card {
+  background: #0B202E;
+  width: 35%;
+  height: 18rem;
+  -webkit-box-shadow: #0B202E 10px 10px 20px;
+          box-shadow: #0B202E 10px 10px 20px;
+  margin: 0.8rem;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+.card:hover {
+  -webkit-box-shadow: #0B202E 10px 10px 13px;
+          box-shadow: #0B202E 10px 10px 13px;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav */
+/*----------------------------------------------*/
+/* Container */
+/* Footer */
+.navigation {
+  background: #0B202E;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation__logo__link {
+  text-decoration: none;
+}
+
+.navigation__logo__title {
+  color: #E6F7FF;
+  margin: 0 0 0 2rem;
+  -webkit-transition: color ease-in-out 200ms;
+  transition: color ease-in-out 200ms;
+}
+
+.navigation__logo__title:hover {
+  color: #DBB21F;
+}
+
+.navigation__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navigation__links--mobile {
+  display: none;
+}
+
+.navigation__links__item {
+  display: block;
+  color: #E6F7FF;
+  text-decoration: none;
+  padding: 1.9rem;
+  -webkit-transition: background ease-in-out 200ms;
+  transition: background ease-in-out 200ms;
+}
+
+.navigation__links__item:hover {
+  background: #DBB21F;
+  color: #0B202E;
+}
+
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Nav */
+/*----------------------------------------------*/
+/* Container */
+/* Footer */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/*# sourceMappingURL=main.css.map */
