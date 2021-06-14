@@ -1,0 +1,9 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.container{
+    &--cart{
+        @include flex-container;
+        min-height: 27.5rem;
+    }
+}
