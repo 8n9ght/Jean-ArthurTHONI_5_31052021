@@ -1,17 +1,48 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.card__add button{
-    background: $card-btn-bg;
-    border: none;
-    color: $card-btn-text;
-    padding: .5rem 1rem;
-    box-shadow: $card-btn-bg 0 0 5px;
-    transition: all ease-in-out 200ms;
-    &:hover{
-        background: $card-text;
-        transform: scale(1.05);
+.card__add{
+    display: flex;
+    justify-content: center;
+    & button{
+        background: $card-btn-bg;
+        border: none;
         color: $card-btn-text;
-        box-shadow: $card-btn-bg 0 0 10px;
+        padding: .5rem 1rem;
+        transition: all ease-in-out 200ms;
+        &:hover{
+            background: $card-text;
+            transform: scale(1.05);
+            color: $card-btn-text;
+        }
+    }
+}
+
+@keyframes trash{
+    0%{
+        transform: rotate(-5deg) scale(1.1)
+    }
+    33%{
+        transform: rotate(5deg) scale(1.1);
+    }
+    66%{
+        transform: rotate(-5deg) scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.cart__reset{
+    align-self: flex-end;
+    margin: 2rem 0 0 0;
+    &__btn{
+        background: $empty-btn;
+        border: none;
+        color: $empty-btn-text;
+        padding: .5rem 1rem;
+    }
+    &:hover{
+        animation: trash 400ms ease-in-out both;
     }
 }
