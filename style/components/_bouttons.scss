@@ -33,6 +33,7 @@
     }
 }
 
+
 .cart__reset{
     align-self: flex-end;
     margin: 2rem 0 0 0;
@@ -44,5 +45,20 @@
     }
     &:hover{
         animation: trash 400ms ease-in-out both;
+    }
+}
+
+.cart__confirm{
+    align-self: flex-end;
+    margin: 2rem 0 0 0;
+    transition: transform 200ms ease-in-out;
+    &__btn{
+        background: $container-bg;
+        border: none;
+        color: $empty-btn-text;
+        padding: .5rem 1rem;
+    }
+    &:hover{
+        transform: scale(1.1);
     }
 }
