@@ -1,12 +1,31 @@
 .card{
     background: $card-bg;
     width: 35%;
-    height: 18rem;
+    height: 28rem;
     box-shadow: $card-bg 10px 10px 20px;
     margin: 0.8rem;
     transition: all ease-in-out 200ms;
     &:hover{
         box-shadow: $card-bg 10px 10px 13px;
         transform: scale(1.02);
+    }
+    &__banner{
+        width: 100%;
+        height: 60%;
+        &__img{
+            @include img-sizing;
+        }
+    }
+    &__content{
+        padding: 1rem;
+        &__title{
+            color: $card-btn-bg;
+        }
+        &__price{
+            color: $card-btn-bg;
+        }
+        &__description{
+            color: $card-text;
+        }
     }
 }

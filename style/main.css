@@ -16,23 +16,32 @@ html {
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav colors */
 /* ------------------------------------------------------- */
 /* Content colors */
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav */
 /*----------------------------------------------*/
 /* Container */
 /* Footer */
+.card__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .card__add button {
   background: #E6F7FF;
   border: none;
   color: #0B202E;
   padding: .5rem 1rem;
-  -webkit-box-shadow: #E6F7FF 0 0 5px;
-          box-shadow: #E6F7FF 0 0 5px;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
 }
@@ -42,8 +51,84 @@ html {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   color: #0B202E;
-  -webkit-box-shadow: #E6F7FF 0 0 10px;
-          box-shadow: #E6F7FF 0 0 10px;
+}
+
+@-webkit-keyframes trash {
+  0% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  33% {
+    -webkit-transform: rotate(5deg) scale(1.1);
+            transform: rotate(5deg) scale(1.1);
+  }
+  66% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes trash {
+  0% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  33% {
+    -webkit-transform: rotate(5deg) scale(1.1);
+            transform: rotate(5deg) scale(1.1);
+  }
+  66% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.cart__reset {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 2rem 0 0 0;
+}
+
+.cart__reset__btn {
+  background: #DBB21F;
+  border: none;
+  color: #0B202E;
+  padding: .5rem 1rem;
+}
+
+.cart__reset:hover {
+  -webkit-animation: trash 400ms ease-in-out both;
+          animation: trash 400ms ease-in-out both;
+}
+
+.cart__confirm {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 2rem 0 0 0;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.cart__confirm__btn {
+  background: #E6F7FF;
+  border: none;
+  color: #0B202E;
+  padding: .5rem 1rem;
+}
+
+.cart__confirm:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* Nav colors */
@@ -52,12 +137,14 @@ html {
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav colors */
 /* ------------------------------------------------------- */
 /* Content colors */
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav */
 /*----------------------------------------------*/
 /* Container */
@@ -132,12 +219,14 @@ html {
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav colors */
 /* ------------------------------------------------------- */
 /* Content colors */
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav */
 /*----------------------------------------------*/
 /* Container */
@@ -148,23 +237,32 @@ html {
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav colors */
 /* ------------------------------------------------------- */
 /* Content colors */
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav */
 /*----------------------------------------------*/
 /* Container */
 /* Footer */
+.card__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .card__add button {
   background: #E6F7FF;
   border: none;
   color: #0B202E;
   padding: .5rem 1rem;
-  -webkit-box-shadow: #E6F7FF 0 0 5px;
-          box-shadow: #E6F7FF 0 0 5px;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
 }
@@ -174,8 +272,65 @@ html {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   color: #0B202E;
-  -webkit-box-shadow: #E6F7FF 0 0 10px;
-          box-shadow: #E6F7FF 0 0 10px;
+}
+
+@keyframes trash {
+  0% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  33% {
+    -webkit-transform: rotate(5deg) scale(1.1);
+            transform: rotate(5deg) scale(1.1);
+  }
+  66% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.cart__reset {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 2rem 0 0 0;
+}
+
+.cart__reset__btn {
+  background: #DBB21F;
+  border: none;
+  color: #0B202E;
+  padding: .5rem 1rem;
+}
+
+.cart__reset:hover {
+  -webkit-animation: trash 400ms ease-in-out both;
+          animation: trash 400ms ease-in-out both;
+}
+
+.cart__confirm {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 2rem 0 0 0;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.cart__confirm__btn {
+  background: #E6F7FF;
+  border: none;
+  color: #0B202E;
+  padding: .5rem 1rem;
+}
+
+.cart__confirm:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container {
@@ -206,7 +361,7 @@ html {
 .card {
   background: #0B202E;
   width: 35%;
-  height: 18rem;
+  height: 28rem;
   -webkit-box-shadow: #0B202E 10px 10px 20px;
           box-shadow: #0B202E 10px 10px 20px;
   margin: 0.8rem;
@@ -221,18 +376,48 @@ html {
           transform: scale(1.02);
 }
 
+.card__banner {
+  width: 100%;
+  height: 60%;
+}
+
+.card__banner__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.card__content {
+  padding: 1rem;
+}
+
+.card__content__title {
+  color: #E6F7FF;
+}
+
+.card__content__price {
+  color: #E6F7FF;
+}
+
+.card__content__description {
+  color: #DBB21F;
+}
+
 /* Nav colors */
 /* ------------------------------------------------------- */
 /* Content colors */
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav colors */
 /* ------------------------------------------------------- */
 /* Content colors */
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /* Nav */
 /*----------------------------------------------*/
 /* Container */
@@ -300,6 +485,163 @@ html {
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Cart colors */
+/* Nav */
+/*----------------------------------------------*/
+/* Container */
+/* Footer */
+.container--cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E6F7FF;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 0;
+  min-height: 27.2rem;
+}
+
+.container__cart {
+  background: #0B202E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem;
+  width: 90%;
+  height: 18.25rem;
+}
+
+.container__cart__products {
+  width: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+}
+
+.container__cart__products--empty {
+  margin: 1rem 0 0;
+  text-align: center;
+  color: #E6F7FF;
+  font-size: 1.2rem;
+}
+
+.container__cart__products::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.container__cart__products::-webkit-scrollbar-track {
+  background: black;
+}
+
+.container__cart__products::-webkit-scrollbar-thumb {
+  background: #0B202E;
+  -webkit-box-shadow: black 0 0 0.5rem;
+          box-shadow: black 0 0 0.5rem;
+}
+
+.container__cart__row {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 7rem;
+  margin: 1rem 0 0.5rem 1.5rem;
+  width: 90%;
+  -webkit-box-shadow: black 0 0 0.5rem;
+          box-shadow: black 0 0 0.5rem;
+}
+
+.container__cart__order {
+  color: #E6F7FF;
+  width: 80%;
+}
+
+.row__img {
+  width: 25%;
+  height: 7rem;
+}
+
+.row__img__item {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.row__content {
+  background: #E6F7FF;
+  padding: .5rem;
+  width: 75%;
+  height: 7rem;
+  color: #0B202E;
+}
+
+.row__content__id {
+  font-size: 0.8rem;
+}
+
+.row__content__description {
+  margin: .5rem 0;
+}
+
+.row__content__description__item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row__content__price {
+  font-weight: bold;
+  color: #164E70;
+}
+
+.order__title {
+  margin: .5rem 0;
+  text-align: center;
+}
+
+.order__total {
+  text-align: center;
+}
+
+.order__btns {
+  text-align: center;
+}
+
+/* Nav colors */
+/* ------------------------------------------------------- */
+/* Content colors */
+/* Cards colors */
+/* ------------------------------------------------------- */
+/* Footer colors */
+/* Cart colors */
 /* Nav */
 /*----------------------------------------------*/
 /* Container */
@@ -310,4 +652,5 @@ html {
 /* Cards colors */
 /* ------------------------------------------------------- */
 /* Footer colors */
+/* Cart colors */
 /*# sourceMappingURL=main.css.map */
