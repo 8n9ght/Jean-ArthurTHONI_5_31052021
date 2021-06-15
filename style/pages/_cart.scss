@@ -4,6 +4,94 @@
 .container{
     &--cart{
         @include flex-container;
-        min-height: 27.5rem;
+        min-height: 27.2rem;
+    }
+    &__cart{
+        background: $card-bg;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        width: 90%;
+        height: 18.25rem;
+        &__products{
+            width: 100rem;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            &--empty{
+                margin: 1rem 0 0;
+                text-align: center;
+                color: $card-btn-bg;
+                font-size: 1.2rem;
+            }
+            &::-webkit-scrollbar{
+                width: 0.5rem;
+            }
+            &::-webkit-scrollbar-track{
+                background: darken($card-bg, 30%);
+            }
+            &::-webkit-scrollbar-thumb{
+                background: $card-bg;
+                box-shadow: darken($card-bg, 20%) 0 0 .5rem;
+            }
+        }
+        &__row{
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            height: 7rem;
+            margin: 1rem 0 0.5rem 1.5rem;
+            width: 90%;
+            box-shadow: darken($card-bg, 20%) 0 0 .5rem;
+        }
+        &__order{
+            color: $card-btn-bg;
+            width: 80%;
+        }
+    }
+}
+
+.row{
+    &__img{
+        width: 25%;
+        height: 7rem;
+        &__item{
+            @include img-sizing;
+        }
+    }
+    &__content{
+        background: $container-bg;
+        padding: .5rem;
+        width: 75%;
+        height: 7rem;
+        color: $container-text;
+        &__id{
+            font-size: 0.8rem
+        }
+        &__description{
+            margin: .5rem 0;
+            &__item{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        &__price{
+            font-weight: bold;
+            color: $container-title;
+        }
+    }
+}
+
+.order{
+    &__title{
+        margin: .5rem 0;
+        text-align: center;
+    }
+    &__total{
+        text-align: center;
+    }
+    &__btns{
+        text-align: center;
     }
 }
