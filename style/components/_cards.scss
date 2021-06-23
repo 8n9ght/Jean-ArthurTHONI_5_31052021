@@ -1,9 +1,8 @@
 .card{
     background: $card-bg;
-    width: 35%;
+    width: 100%;
     height: 28rem;
     box-shadow: $card-bg 10px 10px 20px;
-    margin: 0.8rem;
     transition: all ease-in-out 200ms;
     &:hover{
         box-shadow: $card-bg 10px 10px 13px;
@@ -27,5 +26,13 @@
         &__description{
             color: $card-text;
         }
+    }
+}
+
+.container{
+    &__link{
+        text-decoration: none;
+        width: 35%;
+        margin: 0.8rem;
     }
 }

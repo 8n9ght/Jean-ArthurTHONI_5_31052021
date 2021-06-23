@@ -62,3 +62,16 @@
         transform: scale(1.1);
     }
 }
+
+.order__modal__form--submit{
+    margin: 2rem 0 0 0 !important;
+    transition: transform 200ms ease-in-out;
+    background: $container-bg!important;
+    border: none!important;
+    color: $empty-btn-text!important;
+    padding: .5rem 1rem;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

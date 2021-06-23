@@ -24,6 +24,9 @@
                 color: $card-btn-bg;
                 font-size: 1.2rem;
             }
+            &__link{
+                color: $container-bg;
+            }
             &::-webkit-scrollbar{
                 width: 0.5rem;
             }
@@ -34,6 +37,9 @@
                 background: $card-bg;
                 box-shadow: darken($card-bg, 20%) 0 0 .5rem;
             }
+        }
+        &__link{
+            text-decoration: none;
         }
         &__row{
             text-align: left;
@@ -94,4 +100,74 @@
     &__btns{
         text-align: center;
     }
+    &__modal{
+        width: 50%;
+        padding: 2rem 1rem;
+        background: $container-text;
+        color: $container-bg;
+        position: relative;
+        &__close{
+            position: absolute;
+            right: 1.5rem;
+            top: 1rem;
+            height: 1.5rem;
+            width: 2rem;
+            &:hover{
+                cursor: pointer;
+            }
+            &__item{
+                display: block;
+                width: 2rem;
+                height: 0.1rem;
+                background: $container-bg;
+                transform: rotate(45deg);
+                &:nth-child(1){
+                    position: relative;
+                    top: .7rem;
+                }
+                &:nth-child(2){
+                    position: relative;
+                    top: .6rem;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        &__title{
+            text-align: center;
+            margin: 0 0 2rem 0;
+        }
+        &__background{
+            width: 100%;
+            z-index: 999;
+            height: 100%;
+            position: absolute;
+            background: rgba($container-bg, $alpha: .5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & input{
+                background: transparent;
+                width: 90%;
+                border-top: 0;
+                border-bottom: solid $container-bg 0.1rem;
+                margin: .5rem 0;
+                border-left: 0;
+                border-right: 0;
+                font-size: 1.2rem;
+                color: $card-text;
+                &:focus{
+                    border-bottom: solid $card-text 0.1rem;
+                }
+            }
+        }
+    }
+}
+
+.kill{
+    visibility: hidden;
 }
