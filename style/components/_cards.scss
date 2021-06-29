@@ -10,7 +10,7 @@
     }
     &__banner{
         width: 100%;
-        height: 60%;
+        height: 50%;
         &__img{
             @include img-sizing;
         }
@@ -27,6 +27,10 @@
             color: $card-text;
         }
     }
+}
+
+.product{
+    width: 50%;
 }
 
 .container{

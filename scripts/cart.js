@@ -18,7 +18,3 @@ function getProdutcts(key){
 function saveProducts(key, product){
     localStorage.setItem(key, JSON.stringify(product));
 }
-
-
-
-

@@ -1,7 +1,8 @@
 /* récupération du produit et affichage*/ 
+var formatter = new Intl.NumberFormat('fr-FR', {style: 'currency',
+currency: 'EUR', minimumFractionDigits: 0});
 
 let productInCart = JSON.parse(localStorage.getItem('cart'));
-
 
 function displayCart(){
     if(productInCart === null){
@@ -33,23 +34,23 @@ function displayCart(){
 
             for(let productToBuy of productInCart){
             document.querySelector('.container__cart__products').innerHTML += 
-            `<a href="product.html" class="container__cart__link">
+            `<a href="product.html?id=${productToBuy._id}" class="container__cart__link">
             <div class="container__cart__row">
                 <div class="row__img">
-                    <img class="row__img__item" src="${productToBuy.image}" alt="">
+                    <img class="row__img__item" src="${productToBuy.imageUrl}" alt="">
                 </div>
                 <div class="row__content">
                     <div class="row__content__title">
                         <h2 class="row__content_title__item">${productToBuy.name}</h2>
                     </div>
                     <div class="row__content__id">
-                        <p class="row__content__id__item">${productToBuy.id}</p>
+                        <p class="row__content__id__item">${productToBuy._id}</p>
                     </div>
                     <div class="row__content__description">
                         <p class="row__content__description__item">${productToBuy.description}</p>
                     </div>
                     <div class="row__content__price">
-                        <p class="row__content__price__item">${productToBuy.price}</p>
+                        <p class="row__content__price__item">${formatter.format(productToBuy.price)}</p>
                     </div>
                 </div>
             </div>
@@ -60,7 +61,7 @@ for(var i = 0; i < productInCart.length; i++){
     console.log(total);
 }
 
-document.querySelector('.order__total__item').innerHTML = total + " €";
+document.querySelector('.order__total__item').innerHTML = formatter.format(total);
         }
     }
    
@@ -68,9 +69,14 @@ document.querySelector('.order__total__item').innerHTML = total + " €";
 
 displayCart();
 
-document.querySelector('.cart__confirm').addEventListener("click", function(){
-    document.querySelector('.order__modal__background').classList.remove('kill');
-});
+function openModal(){
+    document.querySelector('.cart__confirm').addEventListener("click", function(){
+        document.querySelector('.order__modal__background').classList.remove('kill');
+    });
+}
+
+openModal();
+
 
 document.querySelector('.order__modal__close').addEventListener('click', function(){
     document.querySelector('.order__modal__background').classList.add('kill');
@@ -88,5 +94,3 @@ document.querySelector('.order__modal__close').addEventListener('click', functio
 
 
 /* Confirmer la commande */
-
-let order = document.querySelector('.cart__confirm__btn');
