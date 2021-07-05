@@ -1,0 +1,13 @@
+.container{
+    &--order{
+        @include flex-container;
+        min-height: 27.2rem;
+    }
+}
+
+.order__infos{
+    width: 55%;
+    height: 10rem;
+    font-size: 1.2rem;
+    text-align: center;
+}

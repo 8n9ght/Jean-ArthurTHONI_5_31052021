@@ -38,3 +38,4 @@ function submitForm(){
 }
 
 document.querySelector('.order__modal__form').addEventListener("submit", submitForm);
+
