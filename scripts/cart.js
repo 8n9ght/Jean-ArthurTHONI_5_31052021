@@ -6,9 +6,9 @@ function addToCart(product){
 
 
 function getProdutcts(key){
-    let listProduct = localStorage.getItem(key);
+    let listProduct = sessionStorage.getItem(key);
     if(listProduct == null){
-        localStorage.setItem(key, [])
+        sessionStorage.setItem(key, [])
         return[];
     }else{
         return JSON.parse(listProduct);
@@ -16,5 +16,5 @@ function getProdutcts(key){
 }
 
 function saveProducts(key, product){
-    localStorage.setItem(key, JSON.stringify(product));
+    sessionStorage.setItem(key, JSON.stringify(product));
 }

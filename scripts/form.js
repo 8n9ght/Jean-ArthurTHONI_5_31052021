@@ -1,39 +1,40 @@
-/* let l_name = document.querySelector('#lastName').value;
-let f_name = document.querySelector('#firstName').value;
-let mail = document.querySelector('#email').value;
-let home = document.querySelector('#city').value;
-let cityAddress = document.querySelector('#address').value;
+/* Envoie du formulaire au serveur */
+function submitForm(){
+    let l_name = document.querySelector('#lastName').value;
+    let f_name = document.querySelector('#firstName').value;
+    let mail = document.querySelector('#email').value;
+    let home = document.querySelector('#city').value;
+    let cityAddress = document.querySelector('#address').value;
+    let productCarted = JSON.parse(sessionStorage.getItem('cart'));
+    let productId = productCarted.map(product => product._id);
+    const contact = {
+        "firstName" : f_name,
+        "lastName" : l_name,
+        "address" : cityAddress,
+        "city" : home,
+        "email" : mail
+    };
+    const orderData = JSON.stringify({"contact":contact, "products":productId});
 
-let productOrdered = [];
-listProduct.forEach(product => {
-    productOrdered.push(product._id);
-})
+    fetch("http://localhost:3000/api/cameras/order", {
+    method: "POST",
+    headers: {
+        'Accept': 'application/json',
+        'Content-type': 'application/json'
+    },
+        body: orderData
 
-const contact = {
-    lastName : l_name,
-    firstName : f_name,
-    email : mail,
-    city : home,
-    address : cityAddress
-};
-
-const orderData = JSON.stringify({"contact":contact, "productOrdered":productOrdered});
-
-console.log(orderData);
-
-function submitForm(e){
-    e.preventDefault();
-    fetch("http://localhost:3000/api/cameras", {
-        method: "POST",
-        headers: {
-            'Accept': 'application/json',
-            'Content-type': 'application/json'
-        },
-            body: JSON.stringify(document.querySelector('.order__modal__form'))
     })
-    .then(function(value){
-        console.log(value);
-    });
+    .then(function(res){
+        if(res.ok){
+            return res.clone().json();
+        }
+    })
+    .then(function(data){
+        sessionStorage.setItem("orderNumber", data.orderId),
+        sessionStorage.setItem("customer", data.contact.firstName),
+        window.location = "order-confirm.html"
+    })
 }
 
-document.querySelector('.order__modal__form').addEventListener("submit", submitForm); */
+document.querySelector('.order__modal__form').addEventListener("submit", submitForm);

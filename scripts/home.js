@@ -1,3 +1,4 @@
+/* Fomatage des prix du panier */
 var formatter = new Intl.NumberFormat('fr-FR', {style: 'currency',
 currency: 'EUR', minimumFractionDigits: 0});
 
@@ -15,7 +16,7 @@ fetch("http://localhost:3000/api/cameras")
         <div class="card__banner"><img src="${jsonProduit.imageUrl}" class="card__banner__img"></div>
         <div class="card__content">
           <h2 class="card__content__title">${jsonProduit.name}</h2>
-          <p class="card__content__price">${jsonProduit.price}</p>
+          <p class="card__content__price">${formatter.format(jsonProduit.price)}</p>
           <p class="card__content__description">${jsonProduit.description}</p>
           </div>
       </div>
