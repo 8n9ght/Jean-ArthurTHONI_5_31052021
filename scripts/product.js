@@ -1,8 +1,13 @@
+/*Récupération des params dans l'URL */
+
 let params = new URLSearchParams(document.location.search);
 let id = params.get("id");
+
+/* Formattage prix */
 var formatter = new Intl.NumberFormat('fr-FR', {style: 'currency',
 currency: 'EUR', minimumFractionDigits: 0});
 
+/* Récupération de l'URL produit et affichage du contenu correspondant */
 fetch("http://localhost:3000/api/cameras/" + id)
 .then(data => data.json())
 .then(productLive =>{
@@ -41,15 +46,15 @@ fetch("http://localhost:3000/api/cameras/" + id)
       <button class="card__add__btn">Ajouter au panier</button>
     </div>
   </div>`;
-let cardProduct = document.querySelector('.card');
-console.log(cardProduct);
-cardProduct.addEventListener("click",function(b){
-  if(b.target.getAttribute('class') === 'card__add__btn'){
-    addToCart(productLive);
-    document.querySelector('.popup').classList.toggle('animate');
-  }
+  /* Ajout du produit au panier et animation de la popup */
   
-})
+  let cardProduct = document.querySelector('.card');
+  cardProduct.addEventListener("click",function(b){
+    if(b.target.getAttribute('class') === 'card__add__btn'){
+      addToCart(productLive);
+      document.querySelector('.popup').classList.toggle('animate');
+    } 
+  })
 })
 
 
