@@ -784,6 +784,14 @@ html {
   border-bottom: solid #DBB21F 0.1rem;
 }
 
+.order__modal__form inputrequired:invalid {
+  border-bottom: solid red 0.1rem;
+}
+
+.order__modal__form input:valid {
+  border-bottom: solid greenyellow 0.1rem;
+}
+
 .kill {
   visibility: hidden;
 }

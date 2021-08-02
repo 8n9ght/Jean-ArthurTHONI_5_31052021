@@ -1,4 +1,5 @@
 /* Envoie du formulaire au serveur */
+
 function submitForm(){
     let l_name = document.querySelector('#lastName').value;
     let f_name = document.querySelector('#firstName').value;
@@ -15,7 +16,7 @@ function submitForm(){
         "email" : mail
     };
     const orderData = JSON.stringify({"contact":contact, "products":productId});
-
+    
     fetch("http://localhost:3000/api/cameras/order", {
     method: "POST",
     headers: {

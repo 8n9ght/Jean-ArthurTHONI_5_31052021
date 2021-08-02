@@ -163,6 +163,12 @@
                 &:focus{
                     border-bottom: solid $card-text 0.1rem;
                 }
+                &required:invalid{
+                    border-bottom: solid red 0.1rem;
+                }
+                &:valid{
+                    border-bottom: solid greenyellow 0.1rem;
+                }
             }
         }
     }

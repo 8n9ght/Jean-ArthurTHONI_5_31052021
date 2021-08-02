@@ -17,19 +17,20 @@
             <h3 class="order__modal__title">Veuillez communiquer vos coordonnées</h3>
             <form method="POST" class="order__modal__form">
                 <label for="lastName">Votre nom</label>
-                <input type="text" name="nom" id="lastName">
+                <input type="text" name="nom" id="lastName" pattern="[a-zA-ZÀ-ž]{2,50}" required>
                 <label for="firstName">Votre prénom</label>
-                <input type="text" name="prénom" id="firstName">
+                <input type="text" name="prénom" id="firstName" pattern="[a-zA-ZÀ-ž]{2,50}" required>
                 <label for="email">Vorte email</label>
-                <input type="email" name="adresse mail" id="email">
+                <input type="email" name="adresse mail" id="email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required>
                 <label for="city">Votre ville</label>
-                <input type="text" name="ville" id="city">
+                <input type="text" name="ville" id="city" pattern="[a-zA-ZÀ-ž\s]{2,50}" required>
                 <label for="address">Votre adresse postale</label>
-                <input type="text" name="adresse postale" id="address">
+                <input type="text" name="adresse postale" id="address" pattern="[a-zA-Z0-9À-ž\s]{2,130}" required>
                 <input type="submit" value="Confirmer la commande" class="order__modal__form--submit">
             </form>
         </div>
     </div>
+    
     <nav class="navigation">
         <div class="navigation__logo">
             <a href="index.html" class="navigation__logo__link"><h1 class="navigation__logo__title">Orinoco</h1></a>
@@ -41,11 +42,6 @@
             <a href="" class="navigation__links__item">Contact</a>
         </div>
 
-        <div class="navigation__links--mobile">
-            <a href="" class="navigation__links__item--mobile">Blog</a>
-            <a href="" class="navigation__links__item--mobile">Panier</a>
-            <a href="" class="navigation__links__item--mobile">Contact</a>
-        </div>
     </nav>
 
     <div class="container--cart">

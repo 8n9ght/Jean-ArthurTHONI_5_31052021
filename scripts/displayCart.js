@@ -6,9 +6,11 @@ currency: 'EUR', minimumFractionDigits: 0});
 let productInCart = JSON.parse(sessionStorage.getItem('cart'));
 
 function displayCart(){
+    /* Affiche un lien de redirection vers la page d'accueeil si le panier est vide */
     if(productInCart === null){
         document.querySelector('.container__cart__products').innerHTML += '<p class="container__cart__products--empty">Votre panier est vide <br> <a href="index.html" class="container__cart__products__link">Découvrez nos produits ou continuez vos achats ici</a></p>';
     }
+    /* Crée et affiche la structure du panier si celui ci n'est pas vide */
         else{
             document.querySelector('.container__cart').innerHTML += `<div class="container__cart__order">
             <div class="order__title">
@@ -24,6 +26,7 @@ function displayCart(){
             document.querySelector('.order__btns').innerHTML += `<div class="cart__reset"><button class="cart__reset__btn">Vider le panier</button></div>
             <div class="cart__confirm"><button class="cart__confirm__btn">Commander</button></div>`;
 
+            /* Vide le panier */
             let trash = document.querySelector('.cart__reset__btn');
 
             function emptyCart(){
@@ -33,6 +36,7 @@ function displayCart(){
 
             trash.addEventListener('click', emptyCart);
 
+            /* Affiche les produits ajoutés au panier */
             for(let productToBuy of productInCart){
                 document.querySelector('.container__cart__products').innerHTML += 
                 `<a href="product.html?id=${productToBuy._id}" class="container__cart__link">
