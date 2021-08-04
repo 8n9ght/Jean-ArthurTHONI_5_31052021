@@ -28,7 +28,7 @@ function submitForm(){
     })
     .then(function(res){
         if(res.ok){
-            return res.clone().json();
+            return res.json();
         }
     })
     .then(function(data){

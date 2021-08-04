@@ -65,7 +65,6 @@ function displayCart(){
                 let total = 0;
                     for(var i = 0; i < productInCart.length; i++){
                         total += parseInt(productInCart[i].price);
-                        console.log(total);
                 }
 
                 document.querySelector('.order__total__item').innerHTML = formatter.format(total);
