@@ -55,7 +55,7 @@ function displayCart(){
                             <p class="row__content__description__item">${productToBuy.description}</p>
                         </div>
                         <div class="row__content__price">
-                            <p class="row__content__price__item">${formatter.format(productToBuy.price)}</p>
+                            <p class="row__content__price__item">${formatter.format(productToBuy.price/100)}</p>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ function displayCart(){
                         total += parseInt(productInCart[i].price);
                 }
 
-                document.querySelector('.order__total__item').innerHTML = formatter.format(total);
+                document.querySelector('.order__total__item').innerHTML = formatter.format(total/100);
             }
         }
    

@@ -27,7 +27,7 @@ fetch("http://localhost:3000/api/cameras/" + id)
   
     <div class="card__content">
       <h2 class="card__content__title">${productLive.name}</h2>
-      <p class="card__content__price">${formatter.format(productLive.price)}</p>
+      <p class="card__content__price">${formatter.format(productLive.price/100)}</p>
       <p class="card__content__description">${productLive.description}</p>
     </div>
 
